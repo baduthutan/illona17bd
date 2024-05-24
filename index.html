@@ -473,7 +473,7 @@
             class="img-fluid img-float"
             data-bs-toggle="modal"
             data-bs-target="#myModal"
-            onclick="act1()"
+            onclick="act3()"
           />
           <img
             src="assets/slide_7/bg7_5.webp"
@@ -481,7 +481,7 @@
             class="img-fluid img-float"
             data-bs-toggle="modal"
             data-bs-target="#myModal"
-            onclick="act2()"
+            onclick="act4()"
           />
           <img
             src="assets/slide_7/bg7_6.webp"
@@ -489,7 +489,7 @@
             class="img-fluid img-float"
             data-bs-toggle="modal"
             data-bs-target="#myModal"
-            onclick="act2()"
+            onclick="act5()"
           />
         </div>
         <img
@@ -559,7 +559,7 @@
             </button>
           </form>
           <div
-            class="tw-max-h-[35vw] tw-mt-[20px] tw-overflow-y-scroll md:tw-max-h-[14.5vw]"
+            class="tw-max-h-[45vw] tw-mt-[20px] tw-overflow-y-scroll md:tw-max-h-[20vw]"
             style="color: #333333"
           >
           <!-- @foreach($wishes as $wish)
@@ -632,70 +632,35 @@
             <div class="carousel-inner">
               <div class="carousel-item active px-4" id="act1">
                 <img
-                  src="assets/slide_6/foto5.webp"
+                  src="assets/slide_7/p1.webp"
                   class="d-block w-100"
                   alt="..."
                 />
               </div>
               <div class="carousel-item px-4" id="act2">
                 <img
-                  src="assets/slide_6/foto3.webp"
+                  src="assets/slide_7/p2.webp"
                   class="d-block w-100"
                   alt="..."
                 />
               </div>
               <div class="carousel-item px-4" id="act3">
                 <img
-                  src="assets/slide_6/foto1.webp"
+                  src="assets/slide_7/p3.webp"
                   class="d-block w-100"
                   alt="..."
                 />
               </div>
               <div class="carousel-item px-4" id="act4">
                 <img
-                  src="assets/slide_6/foto6.webp"
+                  src="assets/slide_7/p4.webp"
                   class="d-block w-100"
                   alt="..."
                 />
               </div>
-              <div class="carousel-item px-4">
+              <div class="carousel-item px-4" id="act5">
                 <img
-                  src="assets/slide_6/foto2.webp"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item px-4">
-                <img
-                  src="assets/slide_6/foto4.webp"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item px-4">
-                <img
-                  src="assets/slide_6/foto7.webp"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item px-4">
-                <img
-                  src="assets/slide_6/foto8.webp"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item px-4">
-                <img
-                  src="assets/slide_6/foto9.webp"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item px-4">
-                <img
-                  src="assets/slide_6/foto10.webp"
+                  src="assets/slide_7/p5.webp"
                   class="d-block w-100"
                   alt="..."
                 />
@@ -831,7 +796,7 @@
 
       // Countdown Timer Functionality
      $(document).ready(function () {
-        let countDownDate = new Date(2024, 5, 1, 17, 0, 0, 0).getTime();
+        let countDownDate = new Date(2024, 5, 1, 17, 30, 0, 0).getTime();
         let interval = setInterval(function () {
           let now = new Date().getTime();
           let distance = countDownDate - now;
@@ -869,6 +834,10 @@
       function act4() {
         $(".carousel-item").removeClass("active");
         $("#act4").addClass("active");
+      }
+      function act5() {
+        $(".carousel-item").removeClass("active");
+        $("#act5").addClass("active");
       }
       // Audio control functionality
       let audioElement = document.getElementById("myAudio");
